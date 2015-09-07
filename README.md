@@ -24,3 +24,20 @@ Example usage is at [ExampleSpec](https://github.com/msimav/spray-contrib-scalaz
 * LazyEither
 * These - A \\&/ B
 * NonEmptyList
+
+## spray-client
+
+This package contains sendReceive implementation with `scalaz.concurrent.Task`.
+
+```
+import spray.client.task._
+
+implicit val system = ActorSystem("test")
+val pipeline: HttpRequest => Task[HttpResponse] = sendReceive
+
+val response: Task[HttpResponse] = pipeline(Get("http://spray.io"))
+
+response.run
+```
+
+Example usage is at [SendReceiveSpec](https://github.com/msimav/spray-contrib-scalaz/blob/master/src/test/scala/spray/client/SendReceiveSpec.scala).

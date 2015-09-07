@@ -12,6 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalaz"        %% "scalaz-concurrent" % "7.1.3"  % "provided",
   "io.spray"          %% "spray-client"      % "1.3.3"  % "provided",
   "io.spray"          %% "spray-json"        % "1.3.2"  % "provided",
+  "com.typesafe.akka" %% "akka-testkit"      % "2.3.12" % "test",
   "org.scalatest"     %% "scalatest"         % "2.2.4"  % "test",
   "org.scalacheck"    %% "scalacheck"        % "1.12.4" % "test"
 )
