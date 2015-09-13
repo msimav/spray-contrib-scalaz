@@ -34,6 +34,6 @@ trait Formats {
   }
 
   implicit def nelFormat[T: JsonFormat]: JsonFormat[NonEmptyList[T]] =
-    (listFormat[T]: JsonFormat[List[T]]).xmap(xs => NonEmptyList(xs.head, xs.tail: _*), _.toList)
+    (listFormat[T]: JsonFormat[List[T]]).xmap(xs => NonEmptyList(xs.head, xs.tail: _*), _.list)
 
 }
