@@ -29,7 +29,7 @@ Example usage is at [ExampleSpec](https://github.com/msimav/spray-contrib-scalaz
 
 This package contains sendReceive implementation with `scalaz.concurrent.Task`.
 
-```
+```scala
 import spray.client.task._
 
 implicit val system = ActorSystem("test")
