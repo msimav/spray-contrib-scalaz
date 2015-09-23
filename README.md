@@ -1,4 +1,4 @@
-# spray-contrib-scalaz
+# spray-contrib-scalaz [![Build Status](https://travis-ci.org/msimav/spray-contrib-scalaz.svg)](https://travis-ci.org/msimav/spray-contrib-scalaz)
 
 Scalaz typeclass instances for spray types.
 
